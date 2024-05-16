@@ -1,0 +1,47 @@
+digraph G {
+	"不平衡分类方法"
+	"数据层面"
+	"不平衡分类方法" -> "数据层面"
+	"重采样"
+	"数据层面" -> "重采样"
+	"上采样 (Oversampling)"
+	"重采样" -> "上采样 (Oversampling)"
+	"简单重采样 (Simple Resampling)"
+	"上采样 (Oversampling)" -> "简单重采样 (Simple Resampling)"
+	"随机上采样 (Random Oversampling)"
+	"简单重采样 (Simple Resampling)" -> "随机上采样 (Random Oversampling)"
+	"信息重采样 (Informative Resampling)"
+	"上采样 (Oversampling)" -> "信息重采样 (Informative Resampling)"
+	"合成少数类过采样技术 (SMOTE)"
+	"信息重采样 (Informative Resampling)" -> "合成少数类过采样技术 (SMOTE)"
+	"下采样 (Undersampling)"
+	"重采样" -> "下采样 (Undersampling)"
+	"简单重采样 (Simple Resampling)"
+	"下采样 (Undersampling)" -> "简单重采样 (Simple Resampling)"
+	"随机下采样 (Random Undersampling)"
+	"简单重采样 (Simple Resampling)" -> "随机下采样 (Random Undersampling)"
+	"信息重采样 (Informative Resampling)"
+	"下采样 (Undersampling)" -> "信息重采样 (Informative Resampling)"
+	"邻域清洗规则 (Neighborhood Cleaning Rule, NCR)"
+	"信息重采样 (Informative Resampling)" -> "邻域清洗规则 (Neighborhood Cleaning Rule, NCR)"
+	"算法层面"
+	"不平衡分类方法" -> "算法层面"
+	"代价敏感方法 (Cost-sensitive Methods)"
+	"算法层面" -> "代价敏感方法 (Cost-sensitive Methods)"
+	"代价敏感学习 (Cost-sensitive Learning)"
+	"代价敏感方法 (Cost-sensitive Methods)" -> "代价敏感学习 (Cost-sensitive Learning)"
+	"代价敏感预测 (Cost-sensitive Prediction)"
+	"代价敏感方法 (Cost-sensitive Methods)" -> "代价敏感预测 (Cost-sensitive Prediction)"
+	"集成方法 (Ensemble Methods)"
+	"算法层面" -> "集成方法 (Ensemble Methods)"
+	Bagging
+	"集成方法 (Ensemble Methods)" -> Bagging
+	Boosting
+	"集成方法 (Ensemble Methods)" -> Boosting
+	AdaBoost
+	Boosting -> AdaBoost
+	"Gradient Boosting"
+	Boosting -> "Gradient Boosting"
+	"随机过采样集成 (Random Over-Sampling Ensemble, ROSE)"
+	"集成方法 (Ensemble Methods)" -> "随机过采样集成 (Random Over-Sampling Ensemble, ROSE)"
+}
